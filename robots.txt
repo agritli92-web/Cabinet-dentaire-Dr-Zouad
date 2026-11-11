@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: استبدل الرابط برابط موقعك النهائي
+Sitemap: https://YOUR-DOMAIN.vercel.app/sitemap.xml
