@@ -145,6 +145,7 @@ summary:after{content:"+";font-size:1.4rem;color:var(--gold)}
 details[open] summary:after{content:"\2212"}
 details p{padding:0 18px 16px;color:var(--muted)}
 /* contact */
+.hrs div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed #d9d2bf}.hrs div:last-child{border:0}.hrs b{color:var(--primary-dark)}.hrs .cl{color:#B3261E}
 .ct{display:grid;gap:12px}
 .ct .card{gap:4px}
 .ct .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
@@ -243,7 +244,7 @@ footer small{width:100%;opacity:.75;text-align:center}
  <div class="ct">
   <div class="card"><h3 data-t="c_a"></h3><p dir="ltr" style="text-align:start">1er etage, 02 Boulevard Mohamed Boudiaf, Chéraga 16014</p>
    <div class="btns"><a class="btn btn-g" href="https://maps.app.goo.gl/4H2SnZGFua4jdwm79" target="_blank" rel="noopener" data-t="c_map"></a></div></div>
-  <div class="card"><h3 data-t="c_hh"></h3><p data-t="hours"></p></div>
+  <div class="card"><h3 data-t="c_hh"></h3><!-- أوقات العمل: عدّل هنا إذا تغيّرت --><div class="hrs"><div><span data-t="d_range"></span><b dir="ltr">09:00 – 22:00</b></div><div><span data-t="d_fri"></span><b class="cl" data-t="closed"></b></div></div></div>
   <div class="card"><h3 data-t="c_t"></h3>
    <div class="btns">
     <a class="btn btn-g" href="tel:+213560592967" dir="ltr">0560 59 29 67</a>
@@ -342,7 +343,7 @@ choose:"اختر...",e_n:"أدخل اسمك (حرفان على الأقل)",e_p:
 days:["السبت","الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس"],
 wa:["السلام عليكم، أرغب في حجز موعد.","الاسم","الهاتف","الخدمة","اليوم","الوقت","ملاحظة"],
 q_h:"الأسئلة الشائعة",q_sub:"إجابات عامة، والاستشارة هي الأساس لكل حالة.",
-c_h:"الموقع والتواصل",c_a:"العنوان",c_map:"افتح في Google Maps",c_hh:"ساعات العمل",c_t:"اتصل بنا",
+c_h:"الموقع والتواصل",c_a:"العنوان",c_map:"افتح في Google Maps",c_hh:"أوقات العمل",d_range:"من السبت إلى الخميس",d_fri:"الجمعة",closed:"مغلق",c_t:"اتصل بنا",
 nav:["الخدمات","لماذا نحن","النتائج","العيادة","الآراء","الحجز","الأسئلة","التواصل"],rights:"جميع الحقوق محفوظة",title:"Cabinet dentaire Dr Zouad Yanis | عيادة أسنان في شراقة، الجزائر"},
 fr:{book_now:"Réserver",h1:"Votre sourire éclatant commence ici",h_sub:"Cabinet du Dr Zouad : soins et esthétique dentaire à Chéraga, Alger.",h_b1:"Prendre rendez-vous",h_b2:"Découvrir nos services",h_b2ig:"Voir nos réalisations sur Instagram",
 hours:"Tous les jours sauf vendredi, de 9h00 à 22h00",
@@ -357,7 +358,7 @@ choose:"Choisir...",e_n:"Entrez votre nom (2 caractères minimum)",e_p:"Entrez u
 days:["Samedi","Dimanche","Lundi","Mardi","Mercredi","Jeudi"],
 wa:["Bonjour, je souhaite prendre rendez-vous.","Nom","Téléphone","Service","Jour","Heure","Remarque"],
 q_h:"Questions fréquentes",q_sub:"Des réponses générales ; la consultation reste la base de chaque cas.",
-c_h:"Accès et contact",c_a:"Adresse",c_map:"Ouvrir dans Google Maps",c_hh:"Horaires",c_t:"Appelez-nous",
+c_h:"Accès et contact",c_a:"Adresse",c_map:"Ouvrir dans Google Maps",c_hh:"Horaires",d_range:"Du samedi au jeudi",d_fri:"Vendredi",closed:"Fermé",c_t:"Appelez-nous",
 nav:["Services","Pourquoi nous","Résultats","Cabinet","Avis","Rendez-vous","FAQ","Contact"],rights:"Tous droits réservés",title:"Cabinet dentaire Dr Zouad Yanis | Dentiste à Chéraga, Alger"}
 };
 var IDS=["services","why","results","gallery","reviews","booking","faq","contact"];
