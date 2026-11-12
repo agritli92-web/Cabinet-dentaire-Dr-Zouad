@@ -185,7 +185,7 @@ footer small{width:100%;opacity:.75;text-align:center}
   <p data-t="h_sub"></p>
   <div class="cta">
    <a href="#booking" class="btn btn-p" data-t="h_b1"></a>
-   <a href="#results" class="btn btn-o" id="h2btn" data-t="h_b2"></a>
+   <a href="#services" class="btn btn-o" id="h2btn" data-t="h_b2"></a>
   </div>
   <div class="trust"><span aria-hidden="true">&#128339;</span><span data-t="hours"></span></div>
  </div>
@@ -329,7 +329,7 @@ var FAQ=[
 
 /* --- النصوص --- */
 var T={
-ar:{book_now:"احجز الآن",h1:"حيث تلتقي دقّة العلاج بجمال الابتسامة",h_sub:"عيادة الدكتور زواد للعناية وتجميل الأسنان في شراقة، الجزائر العاصمة.",h_b1:"احجز موعدك",h_b2:"شاهد نتائجنا",h_b2ig:"شاهد أعمالنا على انستغرام",
+ar:{book_now:"احجز الآن",h1:"ابتسامتك المشرقة تبدأ من هنا",h_sub:"عيادة الدكتور زواد للعناية وتجميل الأسنان في شراقة، الجزائر العاصمة.",h_b1:"احجز موعدك",h_b2:"تعرّف على خدماتنا",h_b2ig:"شاهد أعمالنا على انستغرام",
 hours:"كل يوم ما عدا الجمعة، من 9:00 صباحاً إلى 22:00",
 s_h:"خدماتنا",s_sub:"نقدّم العناية والتجميل في مكان واحد.",svc_b:"احجز",
 w_h:"لماذا عيادتنا؟",w_sub:"ما يميّز تجربتك معنا.",
@@ -344,7 +344,7 @@ wa:["السلام عليكم، أرغب في حجز موعد.","الاسم","ا�
 q_h:"الأسئلة الشائعة",q_sub:"إجابات عامة، والاستشارة هي الأساس لكل حالة.",
 c_h:"الموقع والتواصل",c_a:"العنوان",c_map:"افتح في Google Maps",c_hh:"ساعات العمل",c_t:"اتصل بنا",
 nav:["الخدمات","لماذا نحن","النتائج","العيادة","الآراء","الحجز","الأسئلة","التواصل"],rights:"جميع الحقوق محفوظة",title:"Cabinet dentaire Dr Zouad Yanis | عيادة أسنان في شراقة، الجزائر"},
-fr:{book_now:"Réserver",h1:"Là où la précision des soins rencontre l’élégance du sourire",h_sub:"Cabinet du Dr Zouad : soins et esthétique dentaire à Chéraga, Alger.",h_b1:"Prendre rendez-vous",h_b2:"Voir nos résultats",h_b2ig:"Voir nos réalisations sur Instagram",
+fr:{book_now:"Réserver",h1:"Votre sourire éclatant commence ici",h_sub:"Cabinet du Dr Zouad : soins et esthétique dentaire à Chéraga, Alger.",h_b1:"Prendre rendez-vous",h_b2:"Découvrir nos services",h_b2ig:"Voir nos réalisations sur Instagram",
 hours:"Tous les jours sauf vendredi, de 9h00 à 22h00",
 s_h:"Nos services",s_sub:"Soins et esthétique réunis au même endroit.",svc_b:"Réserver",
 w_h:"Pourquoi notre cabinet ?",w_sub:"Ce qui fait la différence.",
@@ -371,7 +371,7 @@ function render(){
  var els=document.querySelectorAll("[data-t]");
  for(i=0;i<els.length;i++){var k=els[i].getAttribute("data-t");if(t[k])els[i].textContent=t[k]}
  var hasC=CASES.length>0;$("results").hidden=!hasC;
- if(!hasC){$("h2btn").href="https://www.instagram.com/drzouad.esthetique?utm_source=ig_web_button_share_sheet&exln=ZDNlZDc0MzIxNw==";$("h2btn").target="_blank";$("h2btn").rel="noopener";$("h2btn").textContent=t.h_b2ig}
+
  var nav="",fn="";
  for(i=0;i<IDS.length;i++){if(IDS[i]==="results"&&!hasC)continue;nav+='<a href="#'+IDS[i]+'"'+(IDS[i]==="booking"?' class="bk"':'')+'>'+t.nav[i]+'</a>';if(IDS[i]!=="booking")fn+='<a href="#'+IDS[i]+'">'+t.nav[i]+'</a>'}
  $("links").innerHTML=nav;$("menu").innerHTML=nav;$("fnav").innerHTML=fn;
